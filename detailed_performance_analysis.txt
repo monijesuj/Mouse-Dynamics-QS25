@@ -1,0 +1,89 @@
+============================================================
+MOUSE DYNAMICS MODEL PERFORMANCE ANALYSIS
+============================================================
+Total evaluated sessions: 816
+
+Overall Accuracy: 0.9485 (774/816)
+
+========================================
+LEGAL SESSIONS ANALYSIS (is_illegal = 0)
+========================================
+Total actual legal sessions: 411
+Correctly identified as legal: 393 (0.9562)
+Incorrectly identified as illegal: 18 (0.0438)
+
+========================================
+ILLEGAL SESSIONS ANALYSIS (is_illegal = 1)
+========================================
+Total actual illegal sessions: 405
+Correctly identified as illegal: 381 (0.9407)
+Incorrectly identified as legal: 24 (0.0593)
+
+========================================
+CONFUSION MATRIX
+========================================
+                Predicted
+Actual     Legal  Illegal  Total
+Legal        393        18     411
+Illegal       24       381     405
+Total        417       399     816
+
+========================================
+DETAILED PERFORMANCE METRICS
+========================================
+Legal Sessions (Class 0):
+  Precision: 0.9424 (of predicted legal, how many were actually legal)
+  Recall:    0.9562 (of actual legal, how many were correctly identified)
+  F1-Score:  0.9493
+
+Illegal Sessions (Class 1):
+  Precision: 0.9549 (of predicted illegal, how many were actually illegal)
+  Recall:    0.9407 (of actual illegal, how many were correctly identified)
+  F1-Score:  0.9478
+
+========================================
+ERROR ANALYSIS
+========================================
+False Positives: 18 sessions
+  Average confidence: 0.6160
+  Confidence range: 0.5092 - 0.9147
+False Negatives: 24 sessions
+  Average confidence: 0.3416
+  Confidence range: 0.0859 - 0.4927
+
+========================================
+PREDICTION CONFIDENCE ANALYSIS
+========================================
+High confidence correct predictions: 467/816 (0.5723)
+Low confidence predictions (0.4-0.6): 67/816 (0.0821)
+  Accuracy on low confidence predictions: 0.6866
+
+========================================
+SAMPLE MISCLASSIFICATIONS
+========================================
+Sample False Positives (predicted illegal, actually legal):
+  session_9791921163: confidence = 0.9147
+  session_6835186342: confidence = 0.6243
+  session_9973193301: confidence = 0.7251
+
+Sample False Negatives (predicted legal, actually illegal):
+  session_2320125003: confidence = 0.4887
+  session_0668352196: confidence = 0.4502
+  session_9693789671: confidence = 0.4529
+
+========================================
+PROBABILITY DISTRIBUTION ANALYSIS
+========================================
+Legal sessions probability statistics:
+  Mean: 0.2120
+  Std:  0.1406
+  Min:  0.0135
+  Max:  0.9147
+
+Illegal sessions probability statistics:
+  Mean: 0.7866
+  Std:  0.1614
+  Min:  0.0859
+  Max:  0.9801
+
+============================================================

@@ -1,0 +1,27 @@
+============================================================
+MOUSE DYNAMICS CLASSIFICATION SUMMARY REPORT
+============================================================
+
+MODEL PERFORMANCE:
+  Validation Accuracy: 0.7853
+  Cross-validation: 0.6957 ± 0.0647
+  Public Test Accuracy: 0.9485
+
+DATA SUMMARY:
+  Training sessions processed: 40
+  Test sessions processed: 1611
+  Features extracted: 40
+
+PREDICTION SUMMARY:
+  Predicted illegal sessions: 747
+  Predicted legal sessions: 864
+  Illegal rate: 46.4%
+
+TOP 5 MOST IMPORTANT FEATURES:
+  direction_changes: 0.0747
+  click_ratio: 0.0602
+  actions_per_second: 0.0599
+  mean_time_interval: 0.0540
+  move_count: 0.0493
+
+============================================================
